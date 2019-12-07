@@ -18,7 +18,7 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 		public int getCount() {
 				return grid.getCount();
 		}
-
+		public static int firstcount = 0;
 		@Override
 		public String toString() {
 				return "Game{" +
@@ -107,7 +107,7 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 		 * @param args the name of the starting pattern (defaults to "Blip")
 		 */
 		public static void main(String[] args) {
-				String patternName = args.length > 0 ? args[0] : "Blinker";
+				String patternName = args.length > 0 ? args[0] : "Loaf";
 				System.out.println("Game of Life with starting pattern: " + patternName);
 				final String pattern = Library.get(patternName);
 				final Behavior generations = run(0L, pattern);
@@ -133,6 +133,7 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 		 * @return the generation at which the game expired.
 		 */
 		public static Behavior run(long generation, List<Point> points) {
+				firstcount = points.size();
 				return run(create(generation, points), (l, g) -> System.out.println("generation " + l + "; grid=" + g));
 		}
 
@@ -229,7 +230,7 @@ public class Game implements Generational<Game, Grid>, Countable, Renderable {
 								testTerminationPredicate(g -> g.getCount() <= 1, "extinction") ||
 								// TODO now we look for two consecutive equivalent games...
 								testTerminationPredicate(Game::previousMatchingCycle, "having matching previous games")||
-								testTerminationPredicate(g->g.generation>1&&g.getCount()<g.previous.getCount(), "doesn't grow");
+								testTerminationPredicate(g->g.generation>1&&g.getCount()<firstcount, "doesn't grow");
 
 		}
 

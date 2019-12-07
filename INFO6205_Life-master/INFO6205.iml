@@ -14,29 +14,5 @@
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:19.0" level="project" />
     <orderEntry type="library" name="Maven: io.jenetics:jenetics:5.0.1" level="project" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES />
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/buildSrc/src/main/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.doc/src/main/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.example/src/main/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.ext/src/jmh/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.ext/src/main/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.ext/src/test/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.prog/src/main/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.prog/src/test/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.tool/src/main/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.tool/src/test/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.xml/src/jmh/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.xml/src/main/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics.xml/src/test/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics/src/jmh/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics/src/main/java" />
-          <root url="file://$MODULE_DIR$/jenetics-5.1.0/jenetics/src/test/java" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>
